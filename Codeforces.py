@@ -30,8 +30,8 @@ def profile():
         print("Contribution : ",end="")
         print(contri[0].text)
     elif a==3:
-        #id = input("User id : ")
-        #password = input("your password : ")
+        id = input("User id : ")
+        password = input("your password : ")
 
         problem = input("Enter a problem no or Problem name : ")
         browser.get('https://codeforces.com')
@@ -64,10 +64,10 @@ def profile():
         a.click()
 
         id1 = browser.find_element_by_id('handleOrEmail')
-        id1.send_keys('royal_risi')
+        id1.send_keys(id)
 
         psd = browser.find_element_by_id('password')
-        psd.send_keys('passofrj')
+        psd.send_keys(password)
         psd.send_keys(Keys.ENTER)
 
         time.sleep(10)
