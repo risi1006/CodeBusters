@@ -50,5 +50,4 @@ def opp():
 
 
 opp()
-
-
+#can use more comments for better understanding of your code, thankyou:)
